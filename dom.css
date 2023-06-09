@@ -21,10 +21,7 @@ body {
 #frame {
     width: 90vw;
     margin: auto;
-    border: 1px solid navy;
+    border: 1px solid #FFF;
     padding: 1.5rem;
 }
 
-#frame:hover {
-    background-color: #000;
-}
