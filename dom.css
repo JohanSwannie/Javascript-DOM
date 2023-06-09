@@ -26,3 +26,11 @@ body {
     padding: 1.5rem;
 }
 
+#frame:nth-child(odd) {
+    color: black;
+}
+
+#frame:nth-child(even) {
+    color: red;
+}
+
