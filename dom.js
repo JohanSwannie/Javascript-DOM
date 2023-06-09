@@ -19,14 +19,20 @@ const h1Array = [
 
 const cont = document.querySelector(".container");
 
-let count = 0;
+const goGetThem = () => {
+  let count = 0;
 
-while (count < h1Array.length) {
-  const h3text = document.createElement("h3");
-  if (count === 5) {
+  while (count < h1Array.length) {
+    const h3text = document.createElement("h3");
     h3text.setAttribute("class", "bigger");
+    h3text.textContent = h1Array[count];
+    cont.appendChild(h3text);
+    count++;
   }
-  h3text.textContent = h1Array[count];
-  cont.appendChild(h3text);
-  count++;
-}
+
+  document.querySelectorAll(".bigger").forEach((biggy) => {
+    biggy.style.color = "rebeccapurple";
+  });
+};
+
+goGetThem();
