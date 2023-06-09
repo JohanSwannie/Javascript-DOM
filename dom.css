@@ -24,3 +24,7 @@ body {
     border: 1px solid navy;
     padding: 1.5rem;
 }
+
+#frame:hover {
+    background-color: #000;
+}
