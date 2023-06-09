@@ -22,8 +22,16 @@ body {
 #frame {
     width: 90vw;
     margin: auto;
-    border: 1px solid #FFF;
     padding: 1.5rem;
+    margin-bottom: .9px;
+}
+
+#frame:nth-child(odd) {
+    border: 2px solid rgb(242, 74, 8);
+}
+
+#frame:nth-child(even) {
+    border: 2px solid rgb(90, 1, 1);
 }
 
 #frame:nth-child(odd) {
