@@ -23,7 +23,8 @@ const goGetThem = () => {
   }
 
   document.querySelectorAll(".bigger").forEach((biggy) => {
-    biggy.style.color = "rebeccapurple";
+    biggy.style.backgroundColor = "black";
+    biggy.style.color = "white";
   });
 };
 
