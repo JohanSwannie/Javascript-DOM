@@ -10,22 +10,18 @@ const h1Array = [
 
 const cont = document.querySelector(".container");
 
-const goGetThem = () => {
-  let count = 0;
+let count = 0;
 
-  while (count < h1Array.length) {
-    const h3text = document.createElement("h3");
-    h3text.setAttribute("class", "bigger");
-    h3text.setAttribute("id", "frame");
-    h3text.textContent = h1Array[count];
-    cont.appendChild(h3text);
-    count++;
-  }
+while (count < h1Array.length) {
+  const h3text = document.createElement("h3");
+  h3text.setAttribute("class", "bigger");
+  h3text.setAttribute("id", "frame");
+  h3text.textContent = h1Array[count];
+  cont.appendChild(h3text);
+  count++;
+}
 
-  document.querySelectorAll(".bigger").forEach((biggy) => {
-    biggy.style.backgroundColor = "black";
-    biggy.style.color = "white";
-  });
-};
-
-goGetThem();
+document.querySelectorAll(".bigger").forEach((biggy) => {
+  biggy.style.backgroundColor = "black";
+  biggy.style.color = "white";
+});
