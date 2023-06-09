@@ -22,6 +22,5 @@ while (count < h1Array.length) {
 }
 
 document.querySelectorAll(".bigger").forEach((biggy) => {
-  biggy.style.backgroundColor = "black";
-  biggy.style.color = "white";
+  biggy.style.backgroundColor = "peachpuff";
 });
