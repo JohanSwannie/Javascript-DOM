@@ -30,8 +30,6 @@ while (count < h1Array.length) {
   h3text.setAttribute("id", "frame");
   h3text.textContent = h1Array[count];
   const image = document.createElement("img");
-  if (count === 0) {
-  }
   image.src = imageSource[count];
   image.style.width = "150px";
   image.style.height = "100px";
