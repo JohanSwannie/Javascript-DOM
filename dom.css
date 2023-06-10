@@ -12,7 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: .25rem;
 }
 
 .bigger {
@@ -27,11 +27,11 @@ body {
 }
 
 #frame:nth-child(odd) {
-    border: 2px solid rgb(242, 74, 8);
+    border: 4px solid rgb(242, 74, 8);
 }
 
 #frame:nth-child(even) {
-    border: 2px solid rgb(90, 1, 1);
+    border: 4px solid rgb(90, 1, 1);
 }
 
 #frame:nth-child(odd) {
