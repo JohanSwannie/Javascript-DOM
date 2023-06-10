@@ -8,16 +8,36 @@ const h1Array = [
   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro itaque tenetur eius. Eum, minima dolore, voluptatibus possimus quaerat nostrum mollitia esse, sit numquam dolores neque saepe expedita exercitationem rerum ipsum?",
 ];
 
+const imageSource = [
+  "https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_640.jpg",
+  "https://europeansting.files.wordpress.com/2020/04/animals.jpeg",
+  "https://worldanimalfoundation.org/wp-content/uploads/2023/02/amur-Review.jpeg",
+  "https://img.huffingtonpost.com/asset/637f6a142500005c003718d9.jpeg?ops=scalefit_720_noupscale",
+  "https://www.animalsaroundtheglobe.com/wp-content/uploads/2022/02/tiger.jpg",
+  "https://cdn11.bigcommerce.com/s-v5lcc6/product_images/uploaded_images/bio-a-bio-e-1-img1h.jpeg",
+  "https://cdn-wordpress-info.futurelearn.com/wp-content/uploads/B2D7F958-EE3C-45DB-A5BB-482B693830C4.jpeg.optimal.jpeg",
+];
+
 const cont = document.querySelector(".container");
 
 let count = 0;
 
 while (count < h1Array.length) {
+  const extradiv = document.createElement("div");
+  extradiv.classList.add("combination");
   const h3text = document.createElement("h3");
   h3text.setAttribute("class", "bigger");
   h3text.setAttribute("id", "frame");
   h3text.textContent = h1Array[count];
-  cont.appendChild(h3text);
+  const image = document.createElement("img");
+  if (count === 0) {
+  }
+  image.src = imageSource[count];
+  image.style.width = "150px";
+  image.style.height = "100px";
+  extradiv.appendChild(h3text);
+  extradiv.appendChild(image);
+  cont.appendChild(extradiv);
   count++;
 }
 
