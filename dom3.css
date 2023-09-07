@@ -8,6 +8,14 @@ body {
    background-color: rgb(72, 46, 46);
 }
 
+.container {
+   width: 90vw;
+   border: 10px solid #FFF;
+   border-style: double;
+   padding: 4rem;
+   margin: auto;
+}
+
 h2 {
    color: #FFF;
    text-align: center;
