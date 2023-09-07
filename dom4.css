@@ -57,7 +57,7 @@ li {
 
 .buttons {
    display: grid;
-   grid-template-columns: repeat(3, 1fr);
+   grid-template-columns: repeat(4, 1fr);
    width: 70vw;
    margin: auto;
    grid-gap: 1rem;
@@ -67,5 +67,9 @@ button {
    color: #FFF;
    background-color: blue;
    height: 3rem;
+}
+
+#button5 {
+   display: none;
 }
 
