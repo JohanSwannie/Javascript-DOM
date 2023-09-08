@@ -41,6 +41,10 @@ li {
 
 }
 
+.bodyClass  {
+   background-color: rgb(25, 45, 143);
+}
+
 .ulClass {
    background-color: green;
 }
@@ -49,7 +53,7 @@ li {
    color: #FFF;
    background-color: navy;
    font-family: 'Tangerine', cursive;
-   font-size: 2.6rem;
+   font-size: 2.2rem;
    font-weight: bold;
    border: 9px solid gold;
    border-style: double;
@@ -71,5 +75,12 @@ button {
 
 #button5 {
    display: none;
+}
+
+p {
+   color: #FFF;
+   text-align: center;
+   font-size: 2rem;
+   margin-top: 1rem;
 }
 
