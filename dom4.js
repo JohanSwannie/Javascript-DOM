@@ -1,16 +1,38 @@
+const lastMessage = document.getElementById("lastMsg");
+
+let errorMessage;
+let msgFlag;
+
+const bodyTag = document.querySelector("body");
+
+const handleErrorMessage = () => {
+  errorMessage = "";
+  msgFlag = "";
+  lastMessage.innerHTML =
+    'Does the body element contains a class called "bodyClass"? -';
+  msgFlag = bodyTag.classList.contains("bodyClass");
+  errorMessage = lastMessage.innerHTML + "  " + msgFlag;
+  lastMessage.innerHTML = errorMessage;
+};
+
 const addClassListItems = () => {
+  bodyTag.classList.add("bodyClass");
+  handleErrorMessage();
   const li = document.querySelectorAll(".initLi");
   li.forEach((item) => {
     item.classList.add("liClass");
   });
 };
 
+const ulist = document.querySelector(".initUl");
+
 const toggleClassUnorderedList = () => {
-  const ul = document.querySelector(".initUl");
-  ul.classList.toggle("ulClass");
+  ulist.classList.toggle("ulClass");
 };
 
 const removeClassListItems = () => {
+  bodyTag.classList.remove("bodyClass");
+  handleErrorMessage();
   const li = document.querySelectorAll(".initLi");
   li.forEach((item) => {
     item.classList.remove("liClass");
