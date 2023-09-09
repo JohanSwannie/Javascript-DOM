@@ -16,13 +16,13 @@ body {
 
 .container {
    width: 90vw;
-   margin: 0 auto 2rem;
+   margin: 0 auto 1rem;
 }
 
 h2 {
    color: #FFF;
    text-align: center;
-   margin-bottom: 1.5rem;
+   margin-bottom: 1rem;
 }
 
 
@@ -54,4 +54,5 @@ li {
 
 p {
    color: #FFF;
+   font-size: .9rem;
 }
