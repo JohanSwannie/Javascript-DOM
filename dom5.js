@@ -28,6 +28,16 @@ p8.innerHTML = `${descr5} ${htmlChildrenNodes}`;
 
 ulElement.childNodes[1].style.backgroundColor = "crimson";
 
+ulElement.childNodes[1].addEventListener("click", () => {
+  ulElement.childNodes[1].style.backgroundColor = "yellow";
+  ulElement.childNodes[3].style.backgroundColor = "crimson";
+});
+
+ulElement.childNodes[3].addEventListener("click", () => {
+  ulElement.childNodes[3].style.backgroundColor = "yellow";
+  ulElement.childNodes[1].style.backgroundColor = "crimson";
+});
+
 let ulChildrenNodes = "";
 
 ulElement.childNodes.forEach((child) => {
@@ -45,3 +55,9 @@ for (let i = 0; i < ulElement.children.length; i++) {
 p10.innerHTML = `${descr7} ${ulChildren}`;
 
 p11.innerHTML = `${descr8} ${subby.firstChild}`;
+
+const body = document.querySelector("body");
+
+document.addEventListener("click", () => {
+  body.classList.toggle("bodyColor");
+});
