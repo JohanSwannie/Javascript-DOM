@@ -30,15 +30,14 @@ h2 {
    justify-content: center;
    align-items: center;
    font-weight: bold;
-   height: 50vh;
-   padding: 1rem;
    border: 3px solid #FFF;
    border-radius: 5%;
 }
 
 .reveal-button {
    font-size: 1.75rem;
-   width: 100%;
+   padding: 1.5rem;
+   height: auto;
 }
 
 .hidden-content {
@@ -50,5 +49,7 @@ h2 {
    font-size: .85rem;
    letter-spacing: 1px;
    word-spacing: 4px;
+   padding: 1.5rem;
+   height: auto;
 }
 
