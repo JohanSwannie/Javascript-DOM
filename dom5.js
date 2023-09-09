@@ -11,6 +11,10 @@ let descr6 = "The child nodes below the ul Element are ";
 let descr7 = "The children of the ul Element are ";
 let descr8 = `The first child node of the div with class of "sub-container is `;
 let descr9 = `The first child element of the ul element is `;
+let descr10 = `The previous sibling node of the ul element is `;
+let descr11 = `The next sibling node of the ul element is `;
+let descr12 = `The previous sibling element of the ul element is `;
+let descr13 = `The next sibling element of the ul element is `;
 
 p1.innerHTML = `${descr1} ${ulElement.parentNode}`;
 p2.innerHTML = `${descr1} ${ulElement.parentElement}`;
@@ -66,3 +70,11 @@ document.addEventListener("click", () => {
 let ul = document.querySelector("ul");
 
 p12.innerHTML = `${descr9} ${ulElement.firstElementChild}`;
+
+p13.innerHTML = `${descr10} ${ulElement.previousSibling}`;
+
+p14.innerHTML = `${descr11} ${ulElement.nextSibling}`;
+
+p15.innerHTML = `${descr12} ${ulElement.previousElementSibling}`;
+
+p16.innerHTML = `${descr13} ${ulElement.nextElementSibling}`;
