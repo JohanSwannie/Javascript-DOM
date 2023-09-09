@@ -10,6 +10,7 @@ let descr5 = "The child nodes below the HTML Element are ";
 let descr6 = "The child nodes below the ul Element are ";
 let descr7 = "The children of the ul Element are ";
 let descr8 = `The first child node of the div with class of "sub-container is `;
+let descr9 = `The first child element of the ul element is `;
 
 p1.innerHTML = `${descr1} ${ulElement.parentNode}`;
 p2.innerHTML = `${descr1} ${ulElement.parentElement}`;
@@ -61,3 +62,7 @@ const body = document.querySelector("body");
 document.addEventListener("click", () => {
   body.classList.toggle("bodyColor");
 });
+
+let ul = document.querySelector("ul");
+
+p12.innerHTML = `${descr9} ${ulElement.firstElementChild}`;
