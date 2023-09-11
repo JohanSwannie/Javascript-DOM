@@ -38,11 +38,12 @@ let buttonMessage = "";
 
 document.querySelector("button").addEventListener(
   "click",
-  (e) => {
-    bMsg1 = e;
-    bMsg2 = e.target;
-    bMsg3 = e.target.innerText;
+  (event) => {
+    bMsg1 = event;
+    bMsg2 = event.target;
+    bMsg3 = event.target.innerText;
     console.log(bMsg1 + " - " + bMsg2 + " - " + bMsg3);
+    event.target.innerText = "CLICKED";
   },
   true
 );
