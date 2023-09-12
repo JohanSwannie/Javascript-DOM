@@ -1,16 +1,16 @@
 // Event Delegation allows users to append a single event listener to a parent element
 // that adds it to all of its preent and future descendants that match a selector
 
-const pl = document.querySelector(".programming_languages");
+const progList = document.querySelector(".programming_languages");
 const p1 = document.getElementById("p1");
 
-pl.addEventListener("click", (event) => {
+progList.addEventListener("click", (event) => {
   //   p1.innerHTML = `${event.target.getAttribute("id")} is clicked`;
   p1.innerHTML = `${event.target.innerText} is clicked`;
   if (event.target.matches("li")) {
-    for (let i = 0; i < pl.children.length; i++) {
-      pl.children[i].style.color = "#FFF";
-      pl.children[i].style.backgroundColor = "rgb(54, 69, 79)";
+    for (let i = 0; i < progList.children.length; i++) {
+      progList.children[i].style.color = "#FFF";
+      progList.children[i].style.backgroundColor = "rgb(54, 69, 79)";
     }
     event.target.style.backgroundColor = "lightgreen";
     event.target.style.color = "#000";
@@ -45,7 +45,7 @@ butter.addEventListener("click", () => {
       const newLi = document.createElement("li");
       newLi.innerText = language;
       newLi.setAttribute("id", language);
-      pl.appendChild(newLi);
+      progList.appendChild(newLi);
     }
   } else {
     butter.style.display = "none";
