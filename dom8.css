@@ -45,7 +45,8 @@ li {
    top: 40vh;
    right: 2.5vw;
    color: #FFF;
-   background-color: blue;
+   background-color: rgb(28, 54, 72);
+   border: 1.2px solid #FFF;
    width: 20vw;
    height: 7vh;
    font-size: 1.1rem;
