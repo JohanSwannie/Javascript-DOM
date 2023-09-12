@@ -1,0 +1,43 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'Phudu', cursive;
+   user-select: none;
+}
+
+body {
+   background-color: rgb(54, 69, 79);
+   border: 5px solid #FFF;
+   height: 100vh;
+}
+
+h2 {
+   color: #FFF;
+   text-align: center;
+}
+
+.container3 {
+   color: #FFF;
+   text-align: center;
+   width: 40vw;
+   border: 5px solid #FFF;
+   height: 50vh;
+   margin: 5vh auto;
+}
+
+.container2 {
+   width: 30vw;
+   border: 5px solid #FFF;
+   height: 40vh;
+   margin: 5vh auto;
+}
+
+button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 8vw;
+   height: 4vh;
+   margin: 18vh auto;
+}
