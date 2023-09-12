@@ -2,13 +2,59 @@
    padding: 0;
    margin: 0;
    box-sizing: border-box;
-   font-family: 'Phudu', cursive;
+   font-family: 'Roboto Mono', monospace;
    user-select: none;
 }
 
 body {
-   position: relative;
-   background-color: rgb(54, 69, 79);
-   border: 5px solid #FFF;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: url('images/company.jpg') no-repeat center center/ cover;
    height: 100vh;
+}
+
+.products {
+   background-color: #d3d3d3;
+   font-weight: bold;
+   width: 70%;
+   padding: 2rem;
+   border-radius: 2.5rem;
+   box-shadow: 0 0 1.5rem #000;
+}
+
+.products .title {
+   text-align: center;
+   margin-bottom: 1.5rem;
+}
+
+.products .container .question {
+   position: relative;
+   padding: 1.5rem 0;
+   cursor: pointer;
+   border-bottom: 1.25px solid #000;
+}
+
+.products .container .question::after {
+   position: absolute;
+   right: .9rem;
+   content: 'More';
+}
+
+.products .container .answer {
+   padding-top: 1rem;
+   line-height: 1.4;
+   width: 100%;
+   height: 0px;
+   overflow: hidden;
+   transition: .6s;
+}
+
+.products .container.active .answer {
+   height: 150px;
+}
+
+.products .container.active .question {
+   font-size: .8rem;
+   transition: .6s;
 }
