@@ -5,7 +5,8 @@ const pl = document.querySelector(".programming_languages");
 const p1 = document.getElementById("p1");
 
 pl.addEventListener("click", (event) => {
-  p1.innerHTML = `${event.target.getAttribute("id")} is clicked`;
+  //   p1.innerHTML = `${event.target.getAttribute("id")} is clicked`;
+  p1.innerHTML = `${event.target.innerText} is clicked`;
   if (event.target.matches("li")) {
     for (let i = 0; i < pl.children.length; i++) {
       pl.children[i].style.color = "#FFF";
@@ -35,25 +36,20 @@ const butter = document.getElementById("butter");
 const butter2 = document.getElementById("butter2");
 
 butter.addEventListener("click", () => {
-  let searchOn = true;
   let language;
-  while (searchOn) {
-    if (pList.length > 0) {
-      language = pList[Math.floor(Math.random() * pList.length)];
-      if (language) {
-        let index = pList.findIndex((lang) => lang === language);
-        pList.splice(index, 1);
-        const newLi = document.createElement("li");
-        newLi.innerText = language;
-        newLi.setAttribute("id", language);
-        pl.appendChild(newLi);
-        searchOn = false;
-      }
-    } else {
-      butter.style.display = "none";
-      butter2.style.display = "block";
-      searchOn = false;
+  if (pList.length > 0) {
+    language = pList[Math.floor(Math.random() * pList.length)];
+    if (language) {
+      let index = pList.findIndex((lang) => lang === language);
+      pList.splice(index, 1);
+      const newLi = document.createElement("li");
+      newLi.innerText = language;
+      newLi.setAttribute("id", language);
+      pl.appendChild(newLi);
     }
+  } else {
+    butter.style.display = "none";
+    butter2.style.display = "block";
   }
 });
 
