@@ -29,7 +29,11 @@ addTask.addEventListener("click", () => {
   inputTask.value = "";
 
   checkButton.addEventListener("click", () => {
-    checkButton.parentElement.style.textDecoration = "line-through";
+    if (checkButton.parentElement.style.textDecoration === "line-through") {
+      checkButton.parentElement.style.textDecoration = "none";
+    } else {
+      checkButton.parentElement.style.textDecoration = "line-through";
+    }
   });
 
   deleteButton.addEventListener("click", (event) => {
