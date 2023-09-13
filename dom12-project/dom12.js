@@ -47,7 +47,7 @@ const stopWatch = () => {
 
 startStopButton.addEventListener("click", () => {
   if (timerStatus === "stopped") {
-    timerInterval = window.setInterval(stopWatch, 1000);
+    timerInterval = setInterval(stopWatch, 1000);
     document.getElementById(
       "startStopButton"
     ).innerHTML = `<i class="fa-solid fa-pause" id="pause"></i>`;
