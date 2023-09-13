@@ -41,3 +41,15 @@ addTask.addEventListener("click", () => {
     target.parentElement.parentElement.remove();
   });
 });
+
+// function getCSS(element) {
+//   var css_data = "";
+//   var css_obj = getComputedStyle(element);
+
+//   for (var i = 0; i < css_obj.length; i++) {
+//     css_data +=
+//       css_obj[i] + ":" + css_obj.getPropertyValue(css_obj[i]) + ";<br>";
+//   }
+//   document.querySelector(".resDiv").innerHTML = css_data;
+//   return;
+// }
