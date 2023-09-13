@@ -51,10 +51,16 @@ body {
 }
 
 .products .container.active .answer {
-   height: 150px;
+   height: 7rem;
 }
 
 .products .container.active .question {
-   font-size: .8rem;
+   font-size: .9rem;
    transition: .6s;
+}
+
+.products .container.active .question::after {
+   content: "Less";
+   transition: .6s;
+   font-size: 1.1rem;
 }
